@@ -1,0 +1,16 @@
+{
+    "name": "FadiFrejat/weather-package",
+    "description": "Weather integration using Open-Meteo",
+    "autoload": {
+        "psr-4": {
+            "FadiFrejat\\WeatherPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FadiFrejat\\WeatherPackage\\WeatherServiceProvider"
+            ]
+        }
+    }
+}
