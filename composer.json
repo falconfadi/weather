@@ -1,13 +1,4 @@
 {
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/FadiFrejat/WeatherPackage",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
