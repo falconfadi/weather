@@ -9,11 +9,12 @@ class WeatherController extends Controller
 {
     public function formatted()
     {
-        $weather = $this->fetchWeather();
-        return response()->json([
-            'temperature' => $weather['temperature'] . '°C',
-            'windspeed' => $weather['windspeed'] . ' km/h',
-        ]);
+        echo "fad";
+//        $weather = $this->fetchWeather();
+//        return response()->json([
+//            'temperature' => $weather['temperature'] . '°C',
+//            'windspeed' => $weather['windspeed'] . ' km/h',
+//        ]);
     }
 
     public function suggestion()

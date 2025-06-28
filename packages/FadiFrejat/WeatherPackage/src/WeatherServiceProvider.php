@@ -1,7 +1,8 @@
 <?php
 
-namespace YourName\WeatherPackage;
+namespace FadiFrejat\WeatherPackage;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 
 class WeatherServiceProvider extends ServiceProvider
@@ -11,6 +12,7 @@ class WeatherServiceProvider extends ServiceProvider
         // Load routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        Log::info(";;");
         // Load views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'weather');
 

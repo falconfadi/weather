@@ -1,4 +1,13 @@
 {
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/FadiFrejat/WeatherPackage",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
@@ -8,7 +17,8 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "fadifrejat/weather-package": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -24,7 +34,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Fadi_frejat\\WeatherPackage\\": "packages/YourName/WeatherPackage/src/"
+            "FadiFrejat\\WeatherPackage\\": "packages/FadiFrejat/WeatherPackage/src/"
         }
     },
     "autoload-dev": {
@@ -73,4 +83,5 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+
 }

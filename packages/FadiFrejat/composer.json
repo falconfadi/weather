@@ -1,6 +1,7 @@
 {
-    "name": "FadiFrejat/weather-package",
-    "description": "Weather integration using Open-Meteo",
+    "name": "fadifrejat/weather-package",
+    "description": "Weather integration package",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "FadiFrejat\\WeatherPackage\\": "src/"
@@ -12,5 +13,7 @@
                 "FadiFrejat\\WeatherPackage\\WeatherServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
