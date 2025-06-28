@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66023e89a64babf5bbcbde1e679c3ce1",
+    "content-hash": "dbf42e984ce3182dd6f1414ac83ea14c",
     "packages": [
         {
             "name": "brick/math",
@@ -509,6 +509,33 @@
                 }
             ],
             "time": "2025-03-06T22:45:56+00:00"
+        },
+        {
+            "name": "fadifrejat/weather-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/FadiFrejat/WeatherPackage",
+                "reference": "166c1ea40261d70928fa61dcc94c0805552256ef"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FadiFrejat\\WeatherPackage\\WeatherServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FadiFrejat\\WeatherPackage\\": "src/"
+                }
+            },
+            "description": "Weather integration package",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "fruitcake/php-cors",
@@ -8091,7 +8118,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fadifrejat/weather-package": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
